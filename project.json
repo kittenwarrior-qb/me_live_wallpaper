@@ -1,0 +1,65 @@
+{
+	"description" : "A dynamic GitHub contribution graph with theme support.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "",
+	"properties" : 
+	{
+		"githubuser" : 
+		{
+			"default" : "kittenwarrior-qb",
+			"label" : "GitHub Username",
+			"type" : "string"
+		},
+		"theme" : 
+		{
+			"default" : "GitHub Dark",
+			"label" : "Color Theme",
+			"options" : 
+			[
+				"GitHub Dark",
+				"Dracula",
+				"Nord",
+				"Solarized Light",
+				"Monokai",
+				"One Dark Pro",
+				"Tokyo Night",
+				"Ayu Dark",
+				"Cobalt2",
+				"Synthwave '84",
+				"Palenight",
+				"Solarized Dark",
+				"Oceanic Next",
+				"Material Darker",
+				"Gruvbox Dark",
+				"Shades of Purple",
+				"Night Owl",
+				"Andromeda",
+				"Atom One Dark",
+				"City Lights",
+				"Panda",
+				"Everforest Dark",
+				"Catppuccin Mocha",
+				"Rosé Pine",
+				"Kanagawa",
+				"Darcula"
+			],
+			"type" : "combo"
+		}
+	},
+	"title" : "GitHub Contribution Canvas",
+	"type" : "web",
+	"version" : 0
+}

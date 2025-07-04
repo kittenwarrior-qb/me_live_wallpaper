@@ -160,9 +160,8 @@
 
             try {
                 const apiUrl = `https://github-contributions-api.deno.dev/${username}.json`;
-                const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(apiUrl)}`;
                 
-                const response = await fetch(proxyUrl);
+                const response = await fetch(apiUrl);
                 if (!response.ok) throw new Error(`Network response error (status: ${response.status})`);
                 
                 const data = await response.json();
@@ -292,26 +291,23 @@
                     monthsContainer.innerHTML = '';
                     graphWrapper.classList.remove('opacity-100');
                     label.textContent = '';
-                    feedbackDiv.innerHTML = `Please set a GitHub username in Wallpaper Engine. Find me on <a href="https://github.com/kittenwarrior-qb" target="_blank" class="text-green-400 hover:underline">https://github.com/SingleK1ller</a>!`;
+                    feedbackDiv.innerHTML = `Please set a GitHub username in Wallpaper Engine. Find me on <a href="https://github.com/kittenwarrior-qb" target="_blank" class="text-green-400 hover:underline">https://github.com/kittenwarrior-qb</a>!`;
                 }
             },
         };
-        /*
-        // *DEBUG ONLY PANEL* -> Consider edit this part if you want to test using the browser
         window.onload = function() {
             // This block is for browser-only debugging purposes.
             // It simulates the Wallpaper Engine environment.
             if (typeof window.wallpaperPropertyListener.applyUserProperties !== 'function') {
-                 fetchAndBuildGraph('SingleK1ller');
+                 fetchAndBuildGraph('kittenwarrior-qb');
                  applyTheme('Dracula');
             } else {
                 window.wallpaperPropertyListener.applyUserProperties({
-                    githubuser: { value: 'SingleK1ller' },
+                    githubuser: { value: 'kittenwarrior-qb' },
                     theme: { value: 'Dracula' }
                 });
             }
         };
-        */
     </script>
 </body>
 </html>
